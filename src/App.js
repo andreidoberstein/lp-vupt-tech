@@ -12,20 +12,34 @@ function App() {
     <div className="App w-full gap-10 items-center justify-between text-black bg-white">
       <div className="bg-blue-50 text-gray-800 font-sans">
 
-        <section className="bg-blue-100 bg-cover bg-center relative py-20 px-6 text-white bg-[url('./image/bg-hero.avif')]">
-          <div className="absolute inset-0 bg-blue-900 bg-opacity-60 z-0"></div> {/* camada escura pra contraste */}
+        <section className="bg-blue-100 text-center bg-cover bg-center relative pb-16 px-6 text-white bg-[url('./image/vupy.png')]">
+          <div className="absolute bg-indigo-200 bg-opacity-10 z-0"></div> {/* camada escura pra contraste */}
 
-          <div className="relative z-10 text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold mb-4">Organize seu negócio com a Vupt Tecnologia</h1>
-            <p className="text-lg mb-6">Clientes, orçamentos, estoque e agenda em um só lugar.</p>
-            <button className="bg-white text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-              Quero uma demonstração gratuita
+          <p className='text-xl text-start py-6'>
+            <span className='font-medium text-1xl text-zinc-200'>vupt</span> | <span className='font-thin'>Tecnologia</span>
+          </p>
+
+          <div className='flex items-center justify-center gap-28 py-8'>
+            <div>
+              <h1 className="text-5xl font-bold text-white mb-4 text-center space-y-6">
+                Organize a sua <span className=''>gestão</span> <p>de forma <span className='bg-blue-700 font-bold rounded px-2 bg-opacity-70'>simples e eficiente</span></p>
+              </h1>
+            </div>
+
+          </div>
+
+          <div className='py-4'>
+            <p className="text-2xl mb-10 text-white">
+              Mais controle, menos trabalho: centralize clientes, orçamentos, estoque e agenda <p>para aumentar sua produtividade e focar no que realmente importa.</p>
+            </p>
+            <button className="bg-blue-700 text-white px-6 py-3 rounded-2xl shadow hover:bg-indigo-800 transition">
+              Quero uma demonstração gratuita 🚀
             </button>
           </div>
         </section>
 
         {/* Hero Section */}
-        <section className="text-center px-4 bg-blue-100 py-6">
+        {/* <section className="text-center px-4 bg-blue-100 py-6">
           <p className='text-xl'>
             <span className='font-bold text-2xl text-zinc-600'>vupt</span> | Tecnologia
           </p>
@@ -49,7 +63,7 @@ function App() {
               Quero uma demonstração gratuita 🚀
             </button>
           </div>
-        </section>
+        </section> */}
 
         {/* Benefícios */}
         <section className="py-28 px-6 ">
@@ -64,33 +78,33 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto items-center text-center">
             {[
               {
-                icon: <img src={Interview} className='h-28 -mt-12' />,
+                icon: <img src={Interview} className='h-28 -mt-16' />,
                 title: <span className='font-semibold text-xl text-indigo-700'>Gestão de Clientes</span>,
                 text: <p className='font-normal text-start px-4 text-2xl'>
-                  Seus <span className='bg-indigo-200 font-thinn rounded-full px-1'>clientes</span> organizados e sempre à mão para uma
+                  Seus <span className='bg-indigo-700 font-thinn rounded px-1 text-white font-semibold'>clientes</span> organizados e sempre à mão para uma
                   <span className='font-bold text-indigo-700'> gestão eficiente e estratégica.
                   </span>
                 </p>
               },
               {
-                icon: <img src={Documents} className='h-28 -mt-12' />,
+                icon: <img src={Documents} className='h-28 -mt-16' />,
                 title: <span className='font-semibold text-xl text-indigo-700'>Orçamentos</span>,
                 text: <p className='font-normal text-start px-4 text-2xl'>
-                  Transforme seu processo de <span className='bg-indigo-600 font-thinn rounded-full px-2 text-white'>orçamentos</span> em uma <span className='font-bold text-indigo-700'>experiência simples e eficaz.</span>
+                  Transforme seu processo de <span className='bg-indigo-700 font-thinn rounded px-2 text-white font-semibold'>orçamentos</span> em uma <span className='font-bold text-indigo-700'>experiência simples e eficaz.</span>
                 </p>
               },
               {
-                icon: <img src={Logistics} className='h-28 -mt-12' />,
+                icon: <img src={Logistics} className='h-28 -mt-16' />,
                 title: <span className='font-semibold text-xl text-indigo-700'>Estoque</span>,
                 text: <p className='font-normal text-start px-4 text-2xl'>
-                  <span className='font-bold text-indigo-700'>Reduza perdas</span> e aumente a eficiência com o <span className='bg-indigo-600 font-thinn rounded px-2 text-white'>controle</span> de entradas e saídas.
+                  Reduza perdas e aumente a <span className='font-bold text-indigo-700'>eficiência com o <span className='bg-indigo-700 font-semibold rounded px-2 text-white'>controle</span> de entradas e saídas.</span>
                 </p>
               },
               {
-                icon: <img src={Scheduler} className='h-28 -mt-12' />,
+                icon: <img src={Scheduler} className='h-28 -mt-16' />,
                 title: <span className='font-semibold text-xl text-indigo-700'>Agenda</span>,
                 text: <p className='font-normal text-start px-4 text-2xl'>
-                  Otimize sua <span className='font-bold text-indigo-700'>produtividade com <span className='bg-indigo-600 font-thinn rounded px-2 text-white'>agendamentos</span> rápidos</span> e lembretes precisos.
+                  Otimize sua <span className='font-bold text-indigo-700'>produtividade com <span className='bg-indigo-700 font-semibold rounded px-2 text-white'>agendamentos</span> rápidos</span> e lembretes precisos.
                 </p>
               },
             ].map((item, index) => (
