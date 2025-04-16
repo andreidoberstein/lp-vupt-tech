@@ -13,7 +13,7 @@
     "swiper": "^11.2.6",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/andreidoberstein/lp-vupt-tech",
+  "homepage": "https://andreidoberstein.github.io/lp-vupt-tech/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
