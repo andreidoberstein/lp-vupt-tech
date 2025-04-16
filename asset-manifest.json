@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/andreidoberstein/lp-vupt-tech/static/css/main.0673d7e8.css",
+    "main.js": "/andreidoberstein/lp-vupt-tech/static/js/main.d9f9aacf.js",
+    "static/media/vupy.png": "/andreidoberstein/lp-vupt-tech/static/media/vupy.229e48a858cdec4fc297.png",
+    "static/media/Oscine_Trial_Lt.ttf": "/andreidoberstein/lp-vupt-tech/static/media/Oscine_Trial_Lt.31c42532b40eaa04c6a2.ttf",
+    "static/media/prt.jpg": "/andreidoberstein/lp-vupt-tech/static/media/prt.ee1d81fbf22eee10df36.jpg",
+    "static/media/feed-1.jpg": "/andreidoberstein/lp-vupt-tech/static/media/feed-1.fe6295d6bc31bceabca5.jpg",
+    "static/media/logistics.svg": "/andreidoberstein/lp-vupt-tech/static/media/logistics.129aafe953e7e3d0fe6742be02570264.svg",
+    "static/media/interview.svg": "/andreidoberstein/lp-vupt-tech/static/media/interview.8882a6ee92a687b6d759ad79368612e5.svg",
+    "static/media/product-iteration.svg": "/andreidoberstein/lp-vupt-tech/static/media/product-iteration.34c65a923decab9996782f941dba5b98.svg",
+    "static/media/technology.svg": "/andreidoberstein/lp-vupt-tech/static/media/technology.1a46600e2a457fcd88bcd7183423e05e.svg",
+    "static/media/documents.svg": "/andreidoberstein/lp-vupt-tech/static/media/documents.70e737c58647074bc31d841af630a789.svg",
+    "static/media/form.svg": "/andreidoberstein/lp-vupt-tech/static/media/form.6d65e40ce14e9cc91fed5efe564bf045.svg",
+    "static/media/schedule.svg": "/andreidoberstein/lp-vupt-tech/static/media/schedule.64d8617ad2307e381de1d52e65586494.svg",
+    "index.html": "/andreidoberstein/lp-vupt-tech/index.html",
+    "main.0673d7e8.css.map": "/andreidoberstein/lp-vupt-tech/static/css/main.0673d7e8.css.map",
+    "main.d9f9aacf.js.map": "/andreidoberstein/lp-vupt-tech/static/js/main.d9f9aacf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0673d7e8.css",
+    "static/js/main.d9f9aacf.js"
+  ]
+}
