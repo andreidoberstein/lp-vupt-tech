@@ -6,6 +6,7 @@ import Logistics from './image/logistics.svg'
 import Scheduler from './image/schedule.svg'
 import Technology from './image/technology.svg'
 import PrintFedd from './image/prt.jpg'
+import { Carousel } from './components/Carousel'
 
 function App() {
   return (
@@ -119,13 +120,21 @@ function App() {
 
         {/* Depoimentos */}
         <section className="bg-white py-16 px-6 border-t">
+
           <h2 className="text-xl font-thin text-center mb-6 text-zinc-700">
             Depoimentos
           </h2>
           <p className='text-center text-2xl font-bold text-zinc-600'>
             Clientes que Viram Resultados
           </p>
-          <div className='flex flex-row py-16'>
+
+
+          {/* <div className='max-w-6xl h-40 px-16 py-16 text-center'> */}
+          <div className='flex flex-row py-16 px-52 h-2/6'>
+            <Carousel />
+          </div>
+
+          {/* <div className='flex flex-row py-16'>
             <div className="max-w-4xl flex gap-6 mx-auto">
               <div className='bg-indigo-100 p-6 rounded shadow'>
                 <img className='h-[30rem] w-[50rem]' src={PrintFedd} alt='feed' />
@@ -137,16 +146,16 @@ function App() {
                 <img className='h-[30rem] w-[50rem]' src={PrintFedd} alt='feed' />
               </div>
 
-              {/* <blockquote className="bg-blue-100 p-6 rounded-xl shadow">
+              <blockquote className="bg-blue-100 p-6 rounded-xl shadow">
                 “Com a Vupt consegui organizar toda a parte de orçamentos e clientes da minha oficina.”
                 <footer className="mt-2 text-right text-sm text-gray-600">— Carlos, dono de oficina</footer>
               </blockquote>
               <blockquote className="bg-blue-100 p-6 rounded-xl shadow">
                 “Antes era tudo no caderno. Agora tenho estoque e agenda sincronizados. Mudou minha rotina!”
                 <footer className="mt-2 text-right text-sm text-gray-600">— Letícia, loja de roupas</footer>
-              </blockquote> */}
+              </blockquote>
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* Formulário */}
