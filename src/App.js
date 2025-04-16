@@ -4,6 +4,7 @@ import Interview from './image/interview.svg'
 import Documents from './image/documents.svg'
 import Logistics from './image/logistics.svg'
 import Scheduler from './image/schedule.svg'
+import Form from './image/form.svg'
 import Technology from './image/technology.svg'
 import PrintFedd from './image/prt.jpg'
 import { Carousel } from './components/Carousel'
@@ -14,7 +15,7 @@ function App() {
       <div className="bg-blue-50 text-gray-800 font-sans">
 
         <section className="bg-blue-100 text-center bg-cover bg-center relative pb-16 px-6 text-white bg-[url('./image/vupy.png')]">
-          <div className="absolute bg-indigo-200 bg-opacity-10 z-0"></div> {/* camada escura pra contraste */}
+          <div className="absolute bg-indigo-200 bg-opacity-10 z-0"></div>
 
           <p className='text-xl text-start py-6'>
             <span className='font-medium text-1xl text-zinc-200'>vupt</span> | <span className='font-thin'>Tecnologia</span>
@@ -39,34 +40,6 @@ function App() {
           </div>
         </section>
 
-        {/* Hero Section */}
-        {/* <section className="text-center px-4 bg-blue-100 py-6">
-          <p className='text-xl'>
-            <span className='font-bold text-2xl text-zinc-600'>vupt</span> | Tecnologia
-          </p>
-
-          <div className='flex items-center justify-center gap-28 py-8'>
-            <div>
-              <h1 className="text-5xl font-bold text-indigo-600 mb-4 text-start space-y-6">
-                Organize a sua <span className='font-bold text-zinc-700'>gestão</span> <p>de forma <span className='bg-blue-200 font-bold rounded-full px-2'>simples e eficiente</span></p>
-              </h1>
-            </div>
-            <div>
-              <img src={Technology} className='h-64' />
-            </div>
-          </div>
-
-          <div className='py-4'>
-            <p className="text-lg mb-6 text-zinc-700">
-              Mais controle, menos trabalho: centralize clientes, orçamentos, estoque e agenda <p>para aumentar sua produtividade e focar no que realmente importa.</p>
-            </p>
-            <button className="bg-indigo-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-indigo-700 transition">
-              Quero uma demonstração gratuita 🚀
-            </button>
-          </div>
-        </section> */}
-
-        {/* Benefícios */}
         <section className="py-28 px-6 ">
           <div className='flex justify-center pb-28 gap-32'>
             <div className='flex justify-center w-10/12 max-w-6xl text-center items-center gap-36 bg-white rounded-2xl p-10 shadow-sm'>
@@ -128,62 +101,43 @@ function App() {
             Clientes que Viram Resultados
           </p>
 
-
-          {/* <div className='max-w-6xl h-40 px-16 py-16 text-center'> */}
           <div className='flex flex-row py-16 px-52 h-2/6'>
             <Carousel />
           </div>
 
-          {/* <div className='flex flex-row py-16'>
-            <div className="max-w-4xl flex gap-6 mx-auto">
-              <div className='bg-indigo-100 p-6 rounded shadow'>
-                <img className='h-[30rem] w-[50rem]' src={PrintFedd} alt='feed' />
-              </div>
-              <div className='bg-indigo-100 p-6 rounded shadow'>
-                <img className='h-[30rem] w-[50rem]' src={PrintFedd} alt='feed' />
-              </div>
-              <div className='bg-indigo-100 p-6 rounded shadow'>
-                <img className='h-[30rem] w-[50rem]' src={PrintFedd} alt='feed' />
-              </div>
-
-              <blockquote className="bg-blue-100 p-6 rounded-xl shadow">
-                “Com a Vupt consegui organizar toda a parte de orçamentos e clientes da minha oficina.”
-                <footer className="mt-2 text-right text-sm text-gray-600">— Carlos, dono de oficina</footer>
-              </blockquote>
-              <blockquote className="bg-blue-100 p-6 rounded-xl shadow">
-                “Antes era tudo no caderno. Agora tenho estoque e agenda sincronizados. Mudou minha rotina!”
-                <footer className="mt-2 text-right text-sm text-gray-600">— Letícia, loja de roupas</footer>
-              </blockquote>
-            </div>
-          </div> */}
         </section>
 
         {/* Formulário */}
-        <section className="py-16 px-6 bg-blue-100 text-center">
-          <h2 className="text-2xl font-semibold mb-4">
-            Pronto para transformar a gestão do seu negócio?
-          </h2>
-          <p className="mb-6">Solicite uma demonstração gratuita agora mesmo:</p>
-          <form className="max-w-md mx-auto space-y-4">
-            <input
-              type="text"
-              placeholder="Seu nome"
-              className="w-full p-3 rounded-xl border border-gray-300"
-            />
-            <input
-              type="email"
-              placeholder="Seu e-mail"
-              className="w-full p-3 rounded-xl border border-gray-300"
-            />
-            <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-700 transition">
-              Quero uma demonstração gratuita
-            </button>
-          </form>
+        <section className="flex py-16 px-6 items-center justify-center gap-10 bg-blue-100 text-center">
+          <img src={Form} className='h-52' />
+          <div>
+            <p className="mb-6 font-semibold text-zinc-800 text-xl">Solicite uma demonstração gratuita agora mesmo:</p>
+            <form className="max-w-md mx-auto space-y-4">
+              <input
+                type="text"
+                placeholder="Seu nome"
+                className="w-full p-3 rounded-xl border border-gray-300"
+              />
+              <input
+                type="text"
+                placeholder="E-mail ou telefone"
+                className="w-full p-3 rounded-xl border border-gray-300"
+              />
+              <button className="w-full bg-blue-700 text-white px-6 py-3 rounded-2xl shadow hover:bg-indigo-700 transition">
+                Quero uma demonstração gratuita
+              </button>
+            </form>
+          </div>
         </section>
 
         {/* Rodapé */}
-        <footer className="bg-blue-50 text-center py-6 border-t text-sm">
-          <p>© {new Date().getFullYear()} Vupt Tecnologia • contato@vuptecnologia.com.br</p>
+        <footer className="bg-blue-50 text-center px-6 py-16 border-t text-sm">
+          <p className='text-xl text-start py-6'>
+            <span className='font-medium text-1xl text-zinc-800'>vupt</span> | <span className='font-thin'>Tecnologia</span>
+          </p>
+          <p className='text-start'>
+            © {new Date().getFullYear()} Vupt Tecnologia. Todos os direitos reservados
+          </p>
         </footer>
       </div>
     </div>
