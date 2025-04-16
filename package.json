@@ -13,7 +13,7 @@
     "swiper": "^11.2.6",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://andreidoberstein.github.io/lp-vupt-tech/",
+  "homepage": "lp-gestao/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
